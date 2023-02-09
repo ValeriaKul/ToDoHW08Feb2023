@@ -81,7 +81,7 @@ function App() {
       <br />
       <h2>
         To Do List App |{" "}
-        <a href="https://github.com/ValeriaKul/TODO-react">Code</a>
+        <a href="https://github.com/ValeriaKul/ToDoHW08Feb2023">Code</a>
       </h2>
       <br />
 
