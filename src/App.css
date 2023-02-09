@@ -1,0 +1,146 @@
+body {
+  background-color: #333;
+  color: aliceblue;
+}
+
+.App {
+  text-align: center;
+}
+
+.taskBg {
+  background-color: #555;
+  border-radius: 6px;
+  height: fit-content;
+  margin: 5px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+  width: fit-content;
+}
+
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+.taskNumber {
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskBg .taskText {
+  flex: 1;
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  display: inline-block;
+}
+
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #555;
+}
+
+.taskBg:hover .iconsWrap span {
+  color: yellow;
+}
+
+.ch_importance,
+.ch_calendar {
+  max-width: 200px;
+  margin: 0 5px;
+}
+
+.ch_importance select,
+.ch_calendar select {
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.import {
+  color: red;
+  border: 2px solid red;
+  font-weight: 600;
+}
+
+.curr {
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.btn-success {
+  margin-right: 10px;
+}
+
+.col-auto {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: space-around;
+}
+
+.formTable {
+  background: #999;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.days {
+  display: flex;
+  flex-direction: row;
+  max-width: 1400px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.days p {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  margin: 0;
+  background: #6c6b6b;
+  border-radius: 5px;
+}
+
+.dayName {
+  display: flex;
+}
+
+.taskCont {
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 900px; */
+}
