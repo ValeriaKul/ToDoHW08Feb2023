@@ -14,7 +14,7 @@ const ToDoOneDay = ({ toDoNew, markDone, setUpdateData, deleteTask }) => {
           <p>
             {(toDoNew[0].valueDate === ""
               ? "No date"
-              : toDoNew[0].valueDate
+              : toDoNew[0].valueDat
             ).toUpperCase()}
           </p>
         ) : (
@@ -26,6 +26,7 @@ const ToDoOneDay = ({ toDoNew, markDone, setUpdateData, deleteTask }) => {
           .sort((a, b) => (a.value < b.value ? 1 : -1))
           .map((task, index) => {
             return (
+              <>
               <React.Fragment key={task.id}>
                 <div className=" taskBg">
                   <div className={task.status ? "done" : ""}>
@@ -69,6 +70,7 @@ const ToDoOneDay = ({ toDoNew, markDone, setUpdateData, deleteTask }) => {
                   </div>
                 </div>
               </React.Fragment>
+              </>
             );
           })}
       </div>

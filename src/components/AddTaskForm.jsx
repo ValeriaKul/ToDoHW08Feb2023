@@ -48,7 +48,7 @@ const AddTaskForm = ({
           </button>
         </div>
       </div>
-      <br />
+      <br/>
     </>
   );
 };
